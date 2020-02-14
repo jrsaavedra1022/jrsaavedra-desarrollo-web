@@ -1,0 +1,323 @@
+/*selector de etiqueta header section nav*/
+/*https://fonts.google.com/?selection.family=Fjalla+One|Source+Sans+Pro&query=fjall*/
+/*gris oscuro = #1d252c
+gris claro = #626262
+background gris = #1b2127
+celete = #026fff*/
+body {
+	margin: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*para aplicar estilos a varios selectores ,*/
+h1, h2, h3, h4, h5, h6{
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Fjalla One', sans-serif;
+	/*ancho o grosor de la fuente*/
+	font-weight: normal;
+	/*que tipo de estilo itali = cursiva*/
+	/*font-style: italic;*/
+}
+h1{
+	/*margin: top right bottom left;*/
+	/*alto de linea*/
+	line-height: 1.5;
+	/*tamaño de fuente*/
+	font-size: 40px;
+	/*ancho entre letras -.2 = menos 20 % de un pixel*/
+	letter-spacing: -.2px;
+	color: white;
+	/*para tranformar mmayuculos, minuculas etx*/
+	/*text-transform: uppercase;
+	subrayar el texto
+	text-decoration: underline;*/
+	margin: 0px;
+	/*margin: 100px 520px 70px 30px; */
+}
+h1 strong {
+	color: #026fff;
+}
+h2 {
+	color: #026fff;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+
+}
+.portfolio{
+	background: #fafafa;
+	padding: 20px;
+}
+.project{
+	/*border: tamaño tipo estilo;*/
+	/*border-top: 10px solid red;
+	border-right:  10px solid green;
+	border-left: 10px solid green;
+	border-bottom:  10px solid green;*/
+	/*border-top-color: red;*/
+	/*border-color: red;
+	border-width: 15px;
+	border-style: solid; */
+	border: 1px solid gray;
+	/*redondear los border*/
+	border-radius: 10px;
+	margin: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	background: white;
+	/*para encerrar en la caja del borde*/
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.project-course,
+.project-date,
+.project-url{
+	margin: 10px 0;
+}
+/*.project-date{
+	margin: 10px 0;
+}*/
+.project-description{
+	font-size: 20px;
+}
+.project strong {
+	font-family: 'Fjalla One', sans-serif;
+}
+.project-title{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.project-details{
+	width: 500px;
+}
+.project-imageContainer{
+	width: 500px;	
+}
+.hero{
+	height: 300px;
+	background-color: #1b2127;
+/*ancho y alto*/
+/*	background-size: 500px 300px;
+	background-repeat: no-repeat;*/
+	/*x y eje*/
+	/*background-position-x: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.hero-image{
+/*	para tomar las dimensiones originales de la imagen*/
+	object-fit: cover !important;
+}
+.header{
+	/*color de fondo*/
+	background-color: #1b2127;
+	color: white; 
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items: center;
+}
+
+ol, ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.menu{
+	height: inherit;
+}
+.header ol {
+	display: flex;
+	height: inherit;
+}
+.header ol li {
+	
+	height: inherit;
+}
+.header a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0 10px;
+}
+figure{
+	margin: 0px;
+}
+
+/*h1 {
+	font-family: 'Open Sans', Times, serif;
+}*/
+/*selector desendente*/
+/*body header div nav ol li a */
+
+/*selector de clase y de id*/
+
+/*
+Podemos representar un color de 3 formas dentro de CSS:
+
+Palabra clave: red, blue, pink, etc.
+Hexadecimales: 0123456789ABCDEF
+hls() hlsa()
+#000000 = Negro
+#FFFFFF = Blanco
+Se representan por grupos de 2 -> Red, Green, Blue
+
+#FF0000 = Rojo
+#00FF00 = Verde
+#0000FF = Azul
+Para obtener un color más exacto se utiliza rgb o rgba:
+
+rgb(0, 200, 145)
+rgba(0, 50, 70, 0.5) para obtener transparencia*/
+
+
+.padre-flex{
+	display: flex;
+	/*para que bajen cuando no encuentren espacio */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+.box{
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid orange;
+	width: 100px;
+	height: 100px;
+	
+}
+.footer{
+	color: white;
+	background-color: #1b2127;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer img{
+	/*para hacer un alineado vertical*/
+	vertical-align: middle;
+}
+.footer a {
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+.event-list{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.event{
+	/*border: 1px solid red;*/
+	margin: 10px;
+	width: 480px;/*
+	tome el tamaño que le aasigne*/
+	flex-shrink: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #f4fbff;
+}
+
+.event img {
+	width: 480px;
+	height: 200px;
+	object-fit: cover;
+}
+.event-detail {
+	margin: 20px 40px;
+	margin-top: -40px;
+	background: white;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+}
+
+.event-description {
+	text-align: left;
+}
+
+.event-url{
+	border: 1px solid #056fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #056fff;
+	border-radius: 5px;
+}
+.event-list-title{
+	margin-left: 10px;
+}
+.contact{
+	background-color:  #056fff;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;
+}
+
+.social {
+
+}
+.social-link{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: 50px 50px;
+	margin: 0 10px;
+}
+.social-link.twitter{
+	background-image: url('../images/twitter.svg');
+}
+.social-link.facebook{
+	background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+	background-image: url('../images/github.svg');
+}
+.social-link.instagram{
+	background-image: url('../images/instagram.svg');
+	
+}
+.form-email input{
+	border-color: gray;
+	border-radius: 5px;
+	border-style: solid;
+	padding: 10px 20px 10px 25px;
+	background-image: url('../images/envelope.svg');
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position-y: center; 
+	background-position-x: 5px; 
+}
+
+.form-email button {
+	display: block;
+	background: transparent;
+	color: white;
+	padding: 10px 0;
+	border-radius: 5px;
+	width: 100px;
+	margin-top: 10px;
+}
+.form-email h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
